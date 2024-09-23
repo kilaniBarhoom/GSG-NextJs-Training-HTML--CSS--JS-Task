@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4dcc0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+h1 {
+  text-align: center;
+}
+
+#filteringButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#filteringButtons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+#addProductForm {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  text-align: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+#addProductButton {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#addProductButton:hover {
+  background-color: #45a049;
+}
+
+#addProductButton:active {
+  background-color: #3e8e41;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+#productsTable {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+td,
+th {
+  text-align: start;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.deleteProductOption {
+  color: red;
+  cursor: pointer;
+}
+
+.deleteProductOption:hover {
+  text-decoration: underline;
+}
+
+thead tr {
+  background-color: #96f3ff;
+}
