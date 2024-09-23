@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Product List</h1>
+      <div id="filteringButtons">
+        <button data-category="All">All</button>
+        <button data-category="Electronics">Electronics</button>
+        <button data-category="Clothing">Clothing</button>
+      </div>
+      <form id="addProductForm">
+        <input type="text" id="name" required placeholder="Product Name" />
+        <input type="number" id="price" required placeholder="Product Price" />
+        <select id="category">
+          <option value="Electronics">Electronics</option>
+          <option value="Clothing">Clothing</option>
+        </select>
+        <button id="addProductButton" type="submit">Add Product</button>
+      </form>
+      <table id="productsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody id="productsTableContent"></tbody>
+      </table>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
